@@ -8,17 +8,17 @@ import React from 'react';
 //   }
 // }
 
-const App = function () {
-  return (
-    <div>hello react function</div>
-  )
-}
-
-// const App = () => {
+// const App = function () {
 //   return (
-//     <div>hello react function1</div>
+//     <div>hello react function</div>
 //   )
 // }
+
+const App = () => {
+  return (
+    <div>hello react function1</div>
+  )
+}
 
 // const App = () => (<div>hello react function2</div>)
 export default App;
