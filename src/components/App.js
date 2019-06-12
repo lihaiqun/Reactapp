@@ -1,43 +1,23 @@
-// import React from 'react';
-
-// class App extends React.Component {
-//   render () {
-//     return (
-//       <div>hello react</div>
-//     )
-//   }
-// }
-
-// const App = function () {
-//   return (
-//     <div>hello react function</div>
-//   )
-// }
-
-// const App = () => {
-//   return (
-//     <div>hello react function1</div>
-//   )
-// }
-
-// const App = () => (<div>hello react function2</div>)
-
-
 import React, { Component } from 'react';
-class App extends Component {
+class App extends Component{
   constructor(props) {
     super(props);
     this.state = {
-      msg: 'hello guys, long time no see'
+      list: ["a","b","c"]
     }
   }
   render () {
-   return (
-     <div>
-       <h1>look at there</h1>
-       { this.state.msg }
-     </div>
-   ) 
+    return (
+      <ul>
+        {
+          this.state.list.map((item, index) => {
+            return (<li key = { index }>
+              { item }
+            </li>)
+          })
+        }
+      </ul>
+    )
   }
 }
 export default App;
