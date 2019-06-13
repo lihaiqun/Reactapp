@@ -11,7 +11,7 @@ class Com extends Component {
     return (
       <div>
         {
-          <button onMouseEnter={ this.changeFn.bind(this,"u are not the params from constructor")}>click me</button>
+          <button onMouseEnter={ this.changeFn.bind(this,"u are not the params from constructor")}>come here</button>
         }
       </div>
     )
