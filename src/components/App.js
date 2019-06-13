@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import '@/main'
 class Com extends Component{
   constructor(props){
     super(props);
@@ -17,10 +16,12 @@ class Com extends Component{
   }
   render () {
     return (
-      <ul className='list'>
+      <ul>
         {
           this.state.list.map(item => {
-            return (<li key={item.id}>{ item.title}</li>)
+            return (<li key={item.id} style={
+              {width: "100%", height:"30px", borderBottom:'1px solid #000', lineHeight:'30px', padding: '8px'}
+            }>{ item.title}</li>)
           })
         }
       </ul>
