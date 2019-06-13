@@ -6,13 +6,16 @@ class Com extends Component {
       msg: 'Can I change'
     }
   }
+  changeFn () {
+    this.setState({
+      msg: 'It is none of my business'
+    })
+  }
   render () {
     return (
       <div>
         { this.state.msg }
-        <button onClick={ () => {this.setState({
-          msg: 'Do what you want to do'
-        })} }>click me</button>
+        <button onClick={ () => this.changeFn() }>click me</button>
       </div>
     )
   }
